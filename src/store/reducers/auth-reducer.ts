@@ -3,9 +3,13 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 export interface AuthModel {
-	id: string;
+	_id: string;
 	email: string;
 	name: string;
+	role: string;
+	accessToken: string;
+	refreshToken: string;
+	isTwoFactorEnabled?: boolean;
 }
 
 export interface AuthState {
